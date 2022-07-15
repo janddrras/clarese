@@ -1,0 +1,16 @@
+.hero {
+    background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),
+        url("/images/background.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(-6vh);
+    padding-top: 25vh;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

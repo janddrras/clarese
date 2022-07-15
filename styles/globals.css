@@ -1,16 +1,92 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  scroll-behavior: smooth;
+  color: var(--secondary);
+}
+
+:root {
+  --light-shadow: 0 0.9px 2.7px rgba(0, 0, 0, 0.022),
+    0 2.2px 6.9px rgba(0, 0, 0, 0.031), 0 4.4px 84.2px rgba(0, 0, 0, 0.039),
+    0 9.1px 11.2px rgba(0, 0, 0, 0.048), 0 20px 20px rgba(0, 0, 0, 0.07);
+  --dark-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.6);
+  --side-pad: 5vw;
+  --transition: all 1s ease;
+  --primary: #3E7B70;
+  --primary-light: #509F91;
+  --secondary: #0E2C36;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0 1rem;
 }
 
-* {
-  box-sizing: border-box;
+a:first-child {
+  margin-left: 0;
+}
+
+a:last-child {
+  margin-right: 0;
+}
+
+a:hover {
+  text-decoration: underline;
+  transition: var(--transition);
+}
+
+.button {
+  color: white;
+  border: none;
+  border-radius: 1.65rem;
+  background-color: var(--primary);
+  padding: 0.5rem 1.6rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--secondary);
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: var(--primary);
+  font-size: 6rem;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  font-weight: 300;
+  color: var(--primary);
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: var(--primary);
+  font-size: 3.8rem;
+  text-align: center;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
 }

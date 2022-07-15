@@ -1,0 +1,48 @@
+.footer {
+    width: 100%;
+    background-color: var(--primary);
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    color: white;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact h3 {
+    color: white;
+    text-align: right;
+}
+
+.contact h4 {
+    margin: 0;
+}
+
+.contact p {
+    margin: 0.5rem 0;
+}
+
+.contactInfo {
+    padding-left: 2rem;
+    width: 50%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.block {
+    border-bottom: 1px solid var(--primary-light);
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom a {
+    font-weight: 300;
+    font-size: 0.8rem;
+}
