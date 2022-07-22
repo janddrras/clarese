@@ -1,0 +1,24 @@
+.cardContainer {
+    padding: 10vh 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.prodCard {
+    width: 400px;
+    border: 1px solid var(--primary);
+    border-radius: 26px;
+    box-shadow: var(--light-shadow);
+}
+
+.prodCard img {
+    border-radius: 25px 25px 0 0;
+}
+
+.prodCard h4 {
+    color: var(--primary);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 20px 0;
+}

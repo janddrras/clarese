@@ -19,10 +19,11 @@ body {
     0 9.1px 11.2px rgba(0, 0, 0, 0.048), 0 20px 20px rgba(0, 0, 0, 0.07);
   --dark-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.6);
   --side-pad: 5vw;
-  --transition: all 1s ease;
+  --transition: all 0.5s ease-in-out;
   --primary: #3E7B70;
   --primary-light: #509F91;
   --secondary: #0E2C36;
+  --light-grey: #DDEDD5;
 }
 
 a {

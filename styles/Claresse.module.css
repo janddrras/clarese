@@ -1,0 +1,20 @@
+.claresse {
+    width: 100%;
+    background-color: var(--secondary);
+    color: white;
+    padding: 5vh 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    width: 50%;
+}
+
+.text h4 {
+    font-size: 2rem;
+    font-weight: 300;
+}

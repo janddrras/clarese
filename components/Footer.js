@@ -1,13 +1,18 @@
 import styles from '../styles/Footer.module.css'
 import Link from 'next/link'
-import MapComponent from './Map'
+import dynamic from 'next/dynamic';
+
+const MapWithNoSSR = dynamic(() => import('./Map'), {
+    ssr: false
+  });
 
 const Footer = () => {
+    
   return (
     <footer className={styles.footer} >
         <div className="container">
             <div className={styles.contact} id="contact">
-                <MapComponent/>
+                <MapWithNoSSR/>
                 <div className={styles.contactInfo}>
                     <h3>Contactati-ne</h3>
                     <div className={styles.block}>
@@ -21,7 +26,7 @@ const Footer = () => {
                     </div>
                     <div className={styles.block}>
                         <h4>social</h4>
-                        <p>facebook: clarese</p>
+                        <a href='https://www.facebook.com/Somn-proasp%C4%83t-Clarese-100348102745999/'>facebook: clarese</a>
                     </div>
 
                 </div>

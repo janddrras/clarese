@@ -1,0 +1,36 @@
+.recepee {
+    padding-top: 20vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.ingredients {
+    padding: 2rem;
+}
+
+.leftCard {
+    background-color: var(--light-grey);
+    max-width: 400px;
+}
+
+.leftCard ul {
+    line-height: 1.5rem;
+    padding: 0;
+    list-style-position: inside;
+}
+
+.leftCard p {
+    color: var(--primary);
+}
+
+.rightCard ol {
+    list-style-position: outside;
+}
+
+.rightCard li {
+    padding: 0.5rem;
+}

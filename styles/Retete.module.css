@@ -1,0 +1,10 @@
+.retete {
+    padding: 10vh 0;
+}
+
+.retete a {
+    display: block;
+    width: 35%;
+    margin: auto;
+    text-align: center;
+}

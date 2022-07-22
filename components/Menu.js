@@ -13,8 +13,7 @@ const Menu = () => {
               </Link>      
           </div>
           <nav className={styles.nav} >
-              <Link href="#produse"><a>produse</a></Link>
-              <Link href="/despre-noi"><a>despre-noi</a></Link>
+              <Link href="/despreNoi"><a>despre-noi</a></Link>
               <Link href="/retete"><a>retete</a></Link>
               <Link href="#contact"><a className='button'>contact</a></Link>
           </nav>

@@ -1,36 +1,24 @@
-import { useState, useEffect, useRef } from 'react';
-import { Map, View } from 'ol';
-import TileLayer from 'ol/layer/Tile';
-import OSM from 'ol/source/OSM';
-import 'ol/ol.css';
-import {fromLonLat} from 'ol/proj';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import "leaflet/dist/leaflet.css";
+import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
+import "leaflet-defaulticon-compatibility";
 
 function MapComponent() {
-    const [map, setMap] = useState();
-    const mapElement = useRef();
-    const mapRef = useRef();
-    mapRef.current = map;
-
-    useEffect(() => {
-        const initialMap = new Map({
-          target: mapElement.current,
-            layers: [
-                new TileLayer({
-                    source: new OSM(),
-                }),
-            ],
-            view: new View({
-                center: fromLonLat([24.784296, 46.418686 ]),
-                zoom: 14,
-                maxZoom: 18,
-                constrainOnlyCenter: true,
-            }),
-        });
-        setMap(initialMap);
-    }, []);
-
+    
+    const coordinate = [46.418686, 24.784296 ]
+    
     return (
-      <div style={{height:'400px',width:'50%'}} ref={mapElement} className="map-container" />
+        <MapContainer center={coordinate} zoom={14} scrollWheelZoom={false} style={{ height: "400px", width: "100%" }}>
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        <Marker position={coordinate}>
+          <Popup>
+            Ferma Clarese <br /> Vă așteptăm.
+          </Popup>
+        </Marker>
+      </MapContainer>
     );
 }
 

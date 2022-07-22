@@ -1,0 +1,18 @@
+.section {
+    padding-top: 25vh;
+}
+
+.section h1 {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    padding: 10vh 0;
+    align-items: center;
+}
+
+.text {
+    padding-left: 2rem;
+    line-height: 1.5rem;
+}

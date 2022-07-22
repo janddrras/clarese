@@ -1,0 +1,34 @@
+.card {
+    background-color: white;
+    border: 1px solid var(--secondary);
+    width: 300px;
+    height: 550px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: var(--light-shadow);
+}
+
+.image {
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+    overflow: hidden;
+}
+
+.card:hover img {
+    transition: var(--transition);
+    transform: scale(1.1);
+}
+
+.card:hover {
+    box-shadow: var(--dark-shadow);
+    transition: var(--transition);
+}
+
+.text {
+    padding: 15px 30px;
+    text-align: center;
+}
+
+.timp {
+    color: var(--primary);
+}
