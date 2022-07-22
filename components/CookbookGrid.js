@@ -1,5 +1,5 @@
 import RecepyCard from './RecepyCard'
-import styles from '../styles/cookbookGrid.module.css'
+import styles from '../styles/CookbookGrid.module.css'
 import cookbook from '../lib/cookbook'
 
 const CookbookGrid = ({fp}) => {
