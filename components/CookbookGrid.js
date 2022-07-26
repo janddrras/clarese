@@ -13,7 +13,7 @@ const CookbookGrid = ({fp}) => {
 
     
   return (
-    <div className='container'>
+    <div>
         <div className={styles.grid} >
             {arr.map(rec => {
                 return <RecepyCard props={rec} key={rec.id}/>

@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Claresse from '../components/claresse'
+import Claresse from '../components/Claresse'
 import Hero from '../components/Hero'
 import Produse from '../components/Produse'
 import Retete from '../components/Retete'

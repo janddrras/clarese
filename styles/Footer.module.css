@@ -8,6 +8,11 @@
 
 .contact {
     display: flex;
+    flex: 1 2;
+}
+
+.map {
+    flex-shrink: 2;
 }
 
 .contact h3 {
@@ -17,19 +22,36 @@
 
 .contact h4 {
     margin: 0;
+    padding-bottom: 0.5rem;
 }
 
 .contact p {
     margin: 0.5rem 0;
 }
 
+.contact a {
+    margin: 0.5rem 0;
+    display: block;
+}
+
 .contactInfo {
     padding-left: 2rem;
     width: 50%;
+    min-width: 300px;
     text-align: right;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.icon {
+    font-size: 2.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    transform: var(--transform);
+}
+
+.icon:hover {
+    color: rgba(255, 255, 255, 1);
 }
 
 .block {
@@ -45,4 +67,31 @@
 .bottom a {
     font-weight: 300;
     font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .contact {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .contactInfo {
+        width: 100%;
+        min-width: 200px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .contact h3 {
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .bottom {
+        text-align: center;
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
 }

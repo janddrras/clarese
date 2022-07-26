@@ -18,3 +18,18 @@
     align-items: center;
     display: flex;
 }
+
+@media only screen and (max-width: 600px) {
+    .menuContainer {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .menuContainer a {
+        margin: 0 0.5rem;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+}

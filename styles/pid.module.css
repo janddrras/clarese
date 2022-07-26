@@ -34,3 +34,15 @@
 .rightCard li {
     padding: 0.5rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .leftCard {
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+    }
+}
