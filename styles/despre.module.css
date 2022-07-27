@@ -23,7 +23,14 @@
         padding: 2rem 0;
     }
 
+
     .text {
         padding: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section {
+        padding-top: 30vh;
     }
 }

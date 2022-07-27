@@ -9,25 +9,28 @@ const cookbookPage = () => {
     if (!pid) {
       return <></>
     }
-    const { img, id, ingredients, time, name,recepee } = cookbook[pid-1]
+    const { img, ingredients, time, name,recepee } = cookbook[pid-1]
     
   return (
-    <section className={styles.recepee}>
+    <section>
       <div className="container">
         <div className={styles.grid}>
-          <div className={styles.leftCard}>
+          <div className={styles.img}>
             <Image src={img} width={400} height={300} />
-            <div className={styles.ingredients}>
-              <ul>
-                {ingredients.map((ing, idx) => {
-                  return <li key={idx}>{ing}</li>
-                })}
-              </ul>
-              <p>Timp de pregatire {time} minute</p>
-            </div>
           </div>
-          <div className={styles.rightCard}>
+          <div className={styles.ingredients}>
+            <p>Ingrediente:</p>
+            <ul>
+              {ingredients.map((ing, idx) => {
+                return <li key={idx}>{ing}</li>
+              })}
+            </ul>
+            <p>Timp de pregatire {time} minute</p>
+          </div>
+          <div className={styles.name}>
             <h1>{name}</h1>
+          </div>
+          <div className={styles.recepee}>
             <ol>
                 {recepee.map((ing, idx) => {
                   return <li key={idx}>{ing}</li>

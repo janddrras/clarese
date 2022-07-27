@@ -1,48 +1,96 @@
-.recepee {
-    padding-top: 20vh;
-}
-
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 20vh;
+    grid-template-areas:
+        "img name name"
+        "ingredients recepee recepee";
 }
 
 .ingredients {
+    grid-area: ingredients;
     padding: 2rem;
-}
-
-.leftCard {
     background-color: var(--light-grey);
     max-width: 400px;
 }
 
-.leftCard ul {
+.name {
+    grid-area: name;
+    padding: 0 2rem;
+}
+
+.recepee {
+    grid-area: recepee;
+    justify-self: start;
+}
+
+.img {
+    grid-area: img;
+}
+
+.ingredients ul {
     line-height: 1.5rem;
     padding: 0;
     list-style-position: inside;
 }
 
-.leftCard p {
+.ingredients p {
     color: var(--primary);
 }
 
-.rightCard ol {
+.recepee ol {
     list-style-position: outside;
 }
 
-.rightCard li {
+.recepee li {
     padding: 0.5rem;
+}
+
+@media only screen and (max-width: 980px) {
+    .name h1 {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "img name "
+            "ingredients recepee";
+    }
 }
 
 @media only screen and (max-width: 600px) {
     .grid {
-        grid-template-columns: 1fr;
+        padding-top: 25vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "name name "
+            "img ingredients"
+            "recepee recepee";
     }
 
-    .leftCard {
-        display: flex;
-        width: 100%;
-        max-width: 100%;
+    .name h1 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "name"
+            "img"
+            "ingredients"
+            "recepee";
+    }
+
+    .img,
+    .ingredients,
+    .name,
+    .recepee {
+        align-self: center;
     }
 }

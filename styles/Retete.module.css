@@ -8,3 +8,9 @@
     margin: auto;
     text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+    .retete a {
+        width: 75%;
+    }
+}

@@ -18,3 +18,9 @@
         grid-template-columns: 1fr;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .grid {
+        padding-top: 6rem;
+    }
+}
